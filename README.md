@@ -70,7 +70,7 @@ async def text_handler(message):
 # Webhook
 
 ```python
-bot = BotClient("TOKEN")
+bot = BotClient("TOKEN", use_webhook = True)
 
 asyncio.run(bot.run(path = "/webhk"
     host="0.0.0.0",

@@ -37,6 +37,7 @@ pip install Gyron
 
 ```python
 from Gyron.bot import BotClient
+import asyncio
 
 bot = BotClient("TOKEN")
 
@@ -47,7 +48,7 @@ async def start(message):
     await message.reply("Hello from Gyron!")
 
 
-bot.run()
+asyncio.run(bot.run())
 ```
 
 ---
@@ -71,10 +72,9 @@ async def text_handler(message):
 ```python
 bot = BotClient("TOKEN")
 
-bot.run(path = "/webhk"
+asyncio.run(bot.run(path = "/webhk"
     host="0.0.0.0",
-    port=8000
-)
+    port=8000))
 ```
 
 ---

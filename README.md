@@ -45,7 +45,7 @@ bot = BotClient("TOKEN")
 @bot.on_update()
 async def start(message):
 
-    await message.reply("Hello from Gyron!")
+    await bot.reply("Hello from Gyron!")
 
 
 asyncio.run(bot.run())

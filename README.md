@@ -43,7 +43,7 @@ bot = BotClient("TOKEN")
 
 
 @bot.on_update()
-async def start(message):
+async def start(update):
 
     await bot.reply("Hello from Gyron!")
 
@@ -53,19 +53,7 @@ asyncio.run(bot.run())
 
 ---
 
-# Filters
 
-```python
-from Gyron.filters import Filters
-
-
-@bot.on_update(Filters.text())
-async def text_handler(message):
-
-    print(message.text)
-```
-
----
 
 # Webhook
 

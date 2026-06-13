@@ -27,7 +27,7 @@ async def start(update:Update):
     await app.reply(f'تست inline keypad', markup= keypad)
 
 
-@app.on_update(filters.callbhack_query('btn2'))
+@app.on_update(filters.callback_query('btn2'))
 async def button2(update:Update):
 
     await app.send_message(update.callback_query.message.chat.id, f'کلیک کردی روی دکمه 2')
